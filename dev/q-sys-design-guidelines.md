@@ -56,6 +56,8 @@ For constructing specific page names, the following table shall be used for orie
   * BMD video switching for the entire venue (not specific to a stage).
 * <mark style="color:blue;">System</mark>
   * All components associated with the core and global controls.
+* <mark style="color:blue;">Audio</mark>
+  * Test.
 
 ## Components
 
