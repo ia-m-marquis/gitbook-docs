@@ -24,10 +24,10 @@ layout:
 
 All Q-SYS Design elements shall be written in English. This allows copy and paste of various components between international projects.
 
-## Schematic Pages
+## Naming
 
-### Naming
-
+{% tabs %}
+{% tab title="Schematic Pages" %}
 There are different main page groups, that all have different specific purposes. Each Group may be connected to a type from the following table. This allows you to build granularity within the design.
 
 <table><thead><tr><th width="118">Group</th><th width="333">Group Specific Type (Optional)</th><th>Associated functionalities</th></tr></thead><tbody><tr><td>UI</td><td>UCI, <a data-footnote-ref href="#user-content-fn-1">XK</a>, <a data-footnote-ref href="#user-content-fn-2">VC</a>, Wallpanels</td><td>UCI interfaces, XK-Keypanels and other control interfaces</td></tr><tr><td>Video</td><td><a data-footnote-ref href="#user-content-fn-3">BMD</a>, <a data-footnote-ref href="#user-content-fn-4">MN</a>, Cameras, Displays, Recording</td><td>Video routers, cameras, displays</td></tr><tr><td>Audio</td><td><a data-footnote-ref href="#user-content-fn-5">Show Relay</a>, Recording</td><td>Audio mixers, amps, audio device control, audio test tools</td></tr><tr><td>Cuelights</td><td></td><td>Cuelight connectors, cuelight logics</td></tr><tr><td>System</td><td></td><td>Licensing, global default controls, system mute, status readout</td></tr></tbody></table>
@@ -36,15 +36,15 @@ For constructing specific page names, the following table shall be used for orie
 
 <mark style="color:blue;">**Group**</mark>**&#x20;+&#x20;**<mark style="color:purple;">**Group Specific Type (Optional)**</mark>**&#x20;+&#x20;**<mark style="color:orange;">**Stage (Optional)**</mark>**&#x20;+&#x20;**<mark style="color:red;">**Location (Optional)**</mark>
 
-| Group (+  Group Specific Type) | Stage (Optional) | Location (Optional) |
-| ------------------------------ | ---------------- | ------------------- |
-| UI                             | KH[^6]           | Desk[^7]            |
-| Video                          | GH[^8]           | FoH[^9]             |
-| Audio                          | WB[^10]          | Studio              |
-| Cuelights                      |                  | SW[^11]             |
-| System                         |                  |                     |
+| Group (+ Group Specific Type) | Stage (Optional) | Location (Optional) |
+| ----------------------------- | ---------------- | ------------------- |
+| UI                            | KH[^6]           | Desk[^7]            |
+| Video                         | GH[^8]           | FoH[^9]             |
+| Audio                         | WB[^10]          | Studio              |
+| Cuelights                     |                  | SW[^11]             |
+| System                        |                  |                     |
 
-#### Examples
+#### **Examples**
 
 * <mark style="color:blue;">Audio</mark> <mark style="color:orange;">GH</mark> <mark style="color:red;">Desk</mark>
   * Audio processing for the stage managers desk of the large stage (Großes Haus).
@@ -56,18 +56,16 @@ For constructing specific page names, the following table shall be used for orie
   * BMD video switching for the entire venue (not specific to a stage).
 * <mark style="color:blue;">System</mark>
   * All components associated with the core and global controls.
+{% endtab %}
 
-## Components
-
-### Naming
-
+{% tab title="Components" %}
 The components (Script Access) names follow the name of their schematic pages + their functional name. If multiple components with the same functional names exist, they should be named after their location or if not possible, numbered consecutively.
 
 The naming convention for the script access component names shall be **Title Case**.
 
 <mark style="color:blue;">**Schematic Page Name**</mark> + <mark style="color:purple;">**Functional Name**</mark> + <mark style="color:orange;">**Number/Location (Optional)**</mark>
 
-#### Examples
+#### **Examples**
 
 * <mark style="color:blue;">Audio Show Relay WB</mark> <mark style="color:purple;">Mixer</mark>
   * Mixer component for the show relay of the workshop stage (Werkstattbühne).
@@ -77,12 +75,9 @@ The naming convention for the script access component names shall be **Title Cas
   * Hi-App Plugin for MediorNet video control.
 * <mark style="color:blue;">System</mark> <mark style="color:purple;">Status Core-Main</mark>
   * Status component for the Main-Core.
+{% endtab %}
 
-
-## Flags
-
-### Naming
-
+{% tab title="Flags" %}
 As flag names are unique to one output pin (one output to multiple inputs), their names are associated with the component, that outputs the signal.
 
 The naming should thereby follow the names of their output components script name + the name of the components control.
@@ -91,16 +86,14 @@ The naming convention for the flag names shall be **Title Case**.
 
 <mark style="color:blue;">**Component Name**</mark> + <mark style="color:purple;">**Control Name**</mark>
 
-#### Examples
+#### **Examples**
 
 * <mark style="color:blue;">Audio Rehearsal System Mixer</mark> <mark style="color:purple;">Input 1 Gain</mark>
   * Input 1 Gain control output of the mixer from the audio rehearsal system.
 * <mark style="color:blue;">UI KH Desk XK</mark> <mark style="color:purple;">Button Tast 10</mark>
   * Tast Button 10 control output of the XK (XK-Flex) keypanel plugin from the small stage (Kleines Haus).
-
-
-
-
+{% endtab %}
+{% endtabs %}
 
 [^1]: XK-Keypanels
 
