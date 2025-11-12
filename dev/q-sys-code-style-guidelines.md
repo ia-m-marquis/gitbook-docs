@@ -29,14 +29,15 @@ Basic annotations (`@type` , `@class` and `@private` / `@protected`) **MUST** be
 
 <summary>Example (function and var definition)</summary>
 
-<pre class="language-lua"><code class="lang-lua">---@type number
+```lua
+---@type number
 local count = 10
 
----@type fun(number: number): boolean
-function IsEven(number)
-    return number <a data-footnote-ref href="#user-content-fn-1">% </a>2 == 0
+---@type fun(value: number): boolean
+function IsEven(value)
+    return value % 2 == 0
 end
-</code></pre>
+```
 
 </details>
 
@@ -135,5 +136,3 @@ dog:birthday()
 --
 -------- Copyright (c) 2025 Industrial Arts GmbH. All rights reserved. --------
 ```
-
-[^1]: 
