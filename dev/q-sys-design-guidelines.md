@@ -46,18 +46,16 @@ For constructing specific page names, the following table shall be used for orie
 
 #### Examples
 
+* <mark style="color:blue;">Audio</mark> <mark style="color:orange;">GH</mark> <mark style="color:red;">Desk</mark>
+  * Audio processing for the stage managers desk of the large stage (Großes Haus).
 * <mark style="color:blue;">UI</mark> <mark style="color:purple;">UCI</mark> <mark style="color:orange;">KH</mark> <mark style="color:red;">Desk</mark>
   * UCI for the stage managers desk of the small stage (Kleines Haus).
 * <mark style="color:blue;">UI</mark> <mark style="color:purple;">XK</mark> <mark style="color:orange;">KH</mark> <mark style="color:red;">Desk</mark>
   * XK Keypanel for the stage managers desk of the small stage (Kleines Haus).
-* <mark style="color:blue;">Audio</mark> <mark style="color:orange;">GH</mark> <mark style="color:red;">Desk</mark>
-  * Audio processing for the stage managers desk of the large stage (Großes Haus).
 * <mark style="color:blue;">Video</mark> <mark style="color:purple;">BMD</mark>
   * BMD video switching for the entire venue (not specific to a stage).
 * <mark style="color:blue;">System</mark>
   * All components associated with the core and global controls.
-* <mark style="color:blue;">Audio</mark>
-  * Test.
 
 ## Components
 
@@ -67,18 +65,19 @@ The components (Script Access) names follow the name of their schematic pages + 
 
 The naming convention for the script access component names shall be **Title Case**.
 
-**Schematic Page Name + Functional Name + Number/Location (Optional)**
+<mark style="color:blue;">**Schematic Page Name**</mark> + <mark style="color:purple;">**Functional Name**</mark> + <mark style="color:orange;">**Number/Location (Optional)**</mark>
 
 #### Examples
 
-* UI KH Desk User Management
-  * User Management Plugin for the stage managers desk of the small stage (Kleines Haus).
-* Video MN Hi-App
-  * Hi-App Plugin for MediorNet video control.
-* System Status Core-Main
-  * Status component for the Main-Core.
-* Audio Show Relay WB Mixer
+* <mark style="color:blue;">Audio Show Relay WB</mark> <mark style="color:purple;">Mixer</mark>
   * Mixer component for the show relay of the workshop stage (Werkstattbühne).
+* <mark style="color:blue;">UI KH Desk</mark> <mark style="color:purple;">User Management</mark>
+  * User Management Plugin for the stage managers desk of the small stage (Kleines Haus).
+* <mark style="color:blue;">Video MN</mark> <mark style="color:purple;">Hi-App</mark>
+  * Hi-App Plugin for MediorNet video control.
+* <mark style="color:blue;">System</mark> <mark style="color:purple;">Status Core-Main</mark>
+  * Status component for the Main-Core.
+
 
 ## Flags
 
@@ -90,12 +89,14 @@ The naming should thereby follow the names of their output components script nam
 
 The naming convention for the flag names shall be **Title Case**.
 
-**Component Name + Control Name**
+<mark style="color:blue;">**Component Name**</mark> + <mark style="color:purple;">**Control Name**</mark>
 
 #### Examples
 
-* Audio Rehearsal System Mixer Input 1 Gain
-  *
+* <mark style="color:blue;">Audio Rehearsal System Mixer</mark> <mark style="color:purple;">Input 1 Gain</mark>
+  * Input 1 Gain control output of the mixer from the audio rehearsal system.
+* <mark style="color:blue;">UI KH Desk XK</mark> <mark style="color:purple;">Button Tast 10</mark>
+  * Tast Button 10 control output of the XK (XK-Flex) keypanel plugin from the small stage (Kleines Haus).
 
 
 
