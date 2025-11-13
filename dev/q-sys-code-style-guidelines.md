@@ -1,5 +1,5 @@
 ---
-description: Code Styling Guidelines for X-Stage Q-SYS Scripts and Plugins
+description: Code Styling Guidelines for X-Stage Q-SYS Script and Plugin creation.
 ---
 
 # Q-SYS Code Style Guidelines
